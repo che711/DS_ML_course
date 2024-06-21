@@ -1,3 +1,5 @@
+from pprint import pprint
+
 def my_func(name="NO_NAME"):
     """just print 'Hello, + name'"""
     print(f"Hello, {name}")
@@ -54,4 +56,29 @@ print("x" in [1, 2, 3])
 
 print("x" in my_list)
 print(2 in my_list)
+
+print(f"\n")
+# извлечь слово "hello"
+d = {'k1':[1,2,3,{'tricky':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}
+list_1=[]
+list_2=[]
+list_3=[]
+list_4=[]
+for value in d.values():
+    list_1.append(value)
+    for itim in list_1:
+        list_2.append(itim)
+        for items in list_2:
+            list_3.append(items)
+            for data in list_3:
+                list_4 = data[3]
+                for hello in list_4.values():
+                    hello_word = hello[3]
+                    for finish in hello_word.values():
+                        for test in finish:
+                            if test == "hello": print(test)
+
+
+
+
 
