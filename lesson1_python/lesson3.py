@@ -79,6 +79,44 @@ for value in d.values():
                             if test == "hello": print(test)
 
 
+def domainGet(email):
+    return email.split('@')[-1]
+
+email_string = domainGet('user@domain.com')
+print(email_string)
+
+tuple = ("connot", "be", "changed")
+list = ["can", "be", "updated", "or", "changed"]
+print(f"Tuple: {tuple}. List: {list}")
+
+def findDog(st):
+    return str.split('dog')
+print(f"Dogs in the line: {len(findDog('Is there a Dog here?'))}")
+
+
+def countDog(st):
+    dog_counter=0
+    dogline = st.split(' ')
+    for doggy in dogline:
+        if doggy == 'dog': dog_counter += 1
+    return dog_counter
+
+Dogs = countDog('This dog runs faster than the other dog dude! dog dog dog dog')
+print(f"Dogs: {Dogs}")
+
+def caught_speeding(speed, is_birthday=False):
+    '''Counter for your speeed accourding to your birthday'''
+    print(f"speed: {speed}, boolean: {is_birthday}")
+    if is_birthday: speed += 5
+    if speed in range(61, 80): return (f"Small tax, speed: {speed}")
+    elif speed <=60: return (f"There are no any taxes, speed: {speed}")
+    else: return (f"Big tax, speed: {speed}")
+
+speed = caught_speeding(55, True)
+
+print(speed)
+
+
 
 
 
