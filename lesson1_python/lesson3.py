@@ -38,6 +38,11 @@ d.items() # словарь не хранят порядок поэтому во�
 
 my_list = [1, 2, 3]
 print(my_list)
+
+# извлеxm слово hello из списка
+lst = [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
+print(f"Извлечь слово hello: {lst[3][1][2][0]}")
+
 # извлекает **по умолчанию**последний элемент списка
 last = my_list.pop()
 print(my_list)
@@ -77,6 +82,11 @@ for value in d.values():
                     for finish in hello_word.values():
                         for test in finish:
                             if test == "hello": print(test)
+    print(f"list1: {list_1}")
+    print(f"list2: {list_2}")
+    print(f"list3: {list_3}")
+    print(f"list4: {list_4}")
+print(d['k1'][3]['tricky'][3]['target'][3])
 
 
 def domainGet(email):
