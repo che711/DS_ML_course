@@ -38,6 +38,11 @@ d.items() # словарь не хранят порядок поэтому во�
 
 my_list = [1, 2, 3]
 print(my_list)
+
+# извлеxm слово hello из списка
+lst = [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
+print(f"Извлечь слово hello: {lst[3][1][2][0]}")
+
 # извлекает **по умолчанию**последний элемент списка
 last = my_list.pop()
 print(my_list)
@@ -77,6 +82,47 @@ for value in d.values():
                     for finish in hello_word.values():
                         for test in finish:
                             if test == "hello": print(test)
+    print(f"list1: {list_1}")
+    print(f"list2: {list_2}")
+    print(f"list3: {list_3}")
+    print(f"list4: {list_4}")
+print(d['k1'][3]['tricky'][3]['target'][3])
+
+
+def domainGet(email):
+    return email.split('@')[-1]
+
+email_string = domainGet('user@domain.com')
+print(email_string)
+
+tuple = ("connot", "be", "changed")
+list = ["can", "be", "updated", "or", "changed"]
+print(f"Tuple: {tuple}. List: {list}")
+
+def findDog(st):
+    return str.split('dog')
+print(f"Dogs in the line: {len(findDog('Is there a Dog here?'))}")
+
+
+def countDog(st):
+    dog_counter=0
+    dogline = st.split(' ')
+    for doggy in dogline:
+        if doggy == 'dog': dog_counter += 1
+    return dog_counter
+
+Dogs = countDog('This dog runs faster than the other dog dude! dog dog dog dog')
+print(f"Dogs: {Dogs}")
+print(f"Final exam")
+def caught_speeding(speed, is_birthday=False):
+    '''Counter for your speeed accourding to your birthday'''
+    print(f"speed: {speed}, boolean: {is_birthday}")
+    if is_birthday: speed += 5
+    if speed in range(61, 80): return (f"Small tax, speed: {speed}")
+    elif speed <=60: return (f"There are no any taxes, speed: {speed}")
+    else: return (f"Big tax, speed: {speed}")
+
+print(f"{caught_speeding(80, True)}")
 
 
 
