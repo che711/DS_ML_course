@@ -15,8 +15,7 @@ print("\n")
 my_matrix = [[1,2,3],[4,5,6],[7,8,9]]  # простой вложенный список python
 print(f"np.array(my_matrix): {np.array(my_matrix)},"
       f"\nтип данных np.array(my_matrix): {type(np.array(my_matrix))}")
-
-
+a
 # верхняя граница np.arange не включается в вывод
 np.arange(0,101,20)
 
@@ -26,6 +25,11 @@ print(f"двумерный массив из нулей: \n{np.zeros((5,5))}")  
 print(f"одномерный массив из единиц: \n{np.ones(5)}") # одномерный массив из единиц (по умолчанию numpy возвращает числа с плавающей точкой)
 print(f"двумерный массив из единиц: \n{np.ones((4,2))}")  # двумерный массив из единиц. передается кортеж, первое число кортежа - кол-во строк, воторое число кортежа - кол-во столбцов
 
+# верхняя граница np.linspace в отличие от np.arange включена в вывод
+print(f"np.linspace шаг 3: {np.linspace(0,10,3)} \nДлина (len(np.linspace(0,10,3)): {len(np.linspace(0,10,3))}")
+print(f"np.linspace шаг 11: {np.linspace(0,10,11)} \nДлина (len(np.linspace(0,10,11)): {len(np.linspace(0,10,11))}")
+print(f"np.linspace шаг 21: {np.linspace(0,10,21)} \nДлина (len(np.linspace(0,10,21)): {len(np.linspace(0,10,21))}")
 
-
+# единичная матрица, на главной диагонали которой единицы,во всех остальных - нули
+print(f"np.eye(5): {np.eye(5)} \nДлина np.eye(5): {len(np.eye(5))}")
 
