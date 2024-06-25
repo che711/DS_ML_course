@@ -47,8 +47,21 @@ print(f"Pраспределение Гаусса: {np.random.randn(2,3)} ")
 print(f"целые случайные числа от 2 до 101 (не включая 101), size=5: \n{np.random.randint(2, high=101, size=5)}")
 print(f"целые случайные числа от 2 до 101 (не включая верзнюю границу), size=(4,5): {np.random.randint(2, high=101, size=(4,5))}")
 
+# воспроизводимый набор случайных числе с помощью seed
+seed = np.random.seed(42)
+print(f"np.random.seed: {seed}")
+print(f"Seed from np.random.rand(4): \n{np.random.rand(2)}")
 
+# мы не можем указать (5, 4) потому что не 25 значений из arr не поместятся в матрицу (5,4)
+arr = np.arange(0,25)
+print(f"arr = np.arange(0,25): {arr},\narr.reshape(5,5): {arr.reshape(5, 5)}")
 
-
+# атрибуты и методы для обработки min/max значений массива
+ranarr = np.random.randint(0,102,10)
+print(f"ranarr: {ranarr}")
+print(f"ranarr.max(): {ranarr.max()}")
+print(f"ranarr.min(): {ranarr.min()}")
+print(f"позиция максимального значения ranarr.argmax(): {ranarr.argmax()}")
+print(f"позиция минимального значения; {ranarr.argmin()}")
 
 
