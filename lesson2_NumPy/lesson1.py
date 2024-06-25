@@ -15,7 +15,7 @@ print("\n")
 my_matrix = [[1,2,3],[4,5,6],[7,8,9]]  # простой вложенный список python
 print(f"np.array(my_matrix): {np.array(my_matrix)},"
       f"\nтип данных np.array(my_matrix): {type(np.array(my_matrix))}")
-a
+
 # верхняя граница np.arange не включается в вывод
 np.arange(0,101,20)
 
@@ -33,3 +33,7 @@ print(f"np.linspace шаг 21: {np.linspace(0,10,21)} \nДлина (len(np.linsp
 # единичная матрица, на главной диагонали которой единицы,во всех остальных - нули
 print(f"np.eye(5): {np.eye(5)} \nДлина np.eye(5): {len(np.eye(5))}")
 
+# Рандомные значения
+print(f"Одно рандомное значение в диапазоне от 0 до 1 с np.random.rand(1): \n{np.random.rand(1)}")
+print(f"Двумерный массив из рандомных значенй от 0 до 1 с пятью строками и шестью столбцами при помощи np.random.rand(5, 6): \n{np.random.rand(5,6)}")
+print(f"Двумерный массив из рандомных значений от 0 до 1 с пятью строками и двумя столбцами при помощи np.random.rand(5, 2): \n{np.random.rand(5,2)}")
