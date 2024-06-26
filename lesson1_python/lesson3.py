@@ -113,7 +113,9 @@ def countDog(st):
 
 Dogs = countDog('This dog runs faster than the other dog dude! dog dog dog dog')
 print(f"Dogs: {Dogs}")
-print(f"Final exam")
+
+
+print(f"\nFinal exam")
 def caught_speeding(speed, is_birthday=False):
     '''Counter for your speeed accourding to your birthday'''
     print(f"speed: {speed}, boolean: {is_birthday}")
