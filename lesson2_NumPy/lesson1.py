@@ -7,6 +7,7 @@ myarr = np.array(mylist)
 print(f"myarr: {myarr}")
 
 # одномерный массив
+
 myarr = np.array(mylist)
 print(f"Просто переменная marr: {myarr}.\nТип данных myarr: {type(myarr)}")
 print("\n")
@@ -17,7 +18,7 @@ print(f"np.array(my_matrix): {np.array(my_matrix)},"
       f"\nтип данных np.array(my_matrix): {type(np.array(my_matrix))}")
 
 # верхняя граница np.arange не включается в вывод
-np.arange(0,101,20)
+print(f"\nnp.arange(0,100,20): {np.arange(0,100,20)}")
 
 # создавать массивы из нулей и единиц
 print(f"одномерный массив из нулей: \n{np.zeros(5)}") # одномерный массив из нулей (по умолчанию numpy возвращает нули с плавающей точкой)
