@@ -58,10 +58,10 @@ print(f"arr = np.arange(0,25): {arr},\narr.reshape(5,5): {arr.reshape(5, 5)}")
 
 # атрибуты и методы для обработки min/max значений массива
 ranarr = np.random.randint(0,102,10)
-print(f"ranarr: {ranarr}")
-print(f"ranarr.max(): {ranarr.max()}")
+print(f"ranarr: {np.random.randint(0,102,10)}")
+print(f"ranarr.max(): {np.random.randint(0,102,10).max()}")
 print(f"ranarr.min(): {ranarr.min()}")
-print(f"позиция максимального значения ranarr.argmax(): {ranarr.argmax()}")
-print(f"позиция минимального значения; {ranarr.argmin()}")
+print(f"позиция max значения: {ranarr.argmax()}")
+print(f"позиция min значения: {ranarr.argmin()}")
 
 
