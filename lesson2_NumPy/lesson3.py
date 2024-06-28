@@ -1,6 +1,5 @@
 import numpy as np
 
-# создаем массив
 arr = np.arange(0, 10)
 print(f"Array: {arr}")
 
@@ -9,7 +8,7 @@ print(f"arr -2: {arr - 2}")
 print(f"arr + arr: {arr+arr}")
 print(f"arr * arr: {arr*arr}")
 print(f"arr / arr: {arr/arr}")
-print(f"1/arr: {1/arr}")
+print(f"1/arr первый элемент массива равен нулю -> будет ошибка RuntimeWarning: {1/arr}")
 print(f"Квадратный корень каждого элемента: {np.sqrt(arr)}")
 print(f"Синус каждого элемента массива: {np.sin(arr)}")
 print(f"натуральный логарифм элемента массива: {np.log(arr)}")
