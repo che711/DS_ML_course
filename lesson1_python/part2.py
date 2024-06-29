@@ -28,3 +28,21 @@ i = 1
 while i < 5:
     print(f'i equal {i}')
     i = i+1
+
+
+print(range(5))
+print(list(range(5)))
+print(list(range(2, 5)))
+
+#  shift + tab --> показывает док стрингу метода/функции в jupyter-notebooks
+
+for x in range(5): print(x)
+x = [1, 2, 3, 4, 5]
+
+out = []
+for num in x:
+    out.append(num**2)
+print(out)
+
+
+

@@ -33,7 +33,7 @@ print(f"set: {set}")
 
 tuple = (2, 5, "data", "TEST")
 print(f"tuple: {tuple}")
-tuple[2] = 'new_position'l
+# tuple[2] = 'new_position'
 
 
 
