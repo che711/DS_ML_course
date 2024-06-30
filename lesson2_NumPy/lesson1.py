@@ -7,7 +7,6 @@ myarr = np.array(mylist)
 print(f"myarr: {myarr}")
 
 # одномерный массив
-
 myarr = np.array(mylist)
 print(f"Просто переменная marr: {myarr}.\nТип данных myarr: {type(myarr)}")
 print("\n")
