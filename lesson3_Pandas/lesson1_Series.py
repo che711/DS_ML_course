@@ -20,6 +20,6 @@ print(f"myser_index['USA']: {myser_index['USA']}")
 ages = {'Sam ':5, 'Frank':10, 'Spike':7}
 series_ages = pd.Series(ages)
 print(f"Series на основе словаря: \n{series_ages}")
-
+ 
 
 
