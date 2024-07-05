@@ -29,6 +29,48 @@ print(f"\nОбщая информация о созданном dataFrame: df.in
 df = pd.read_csv('../course_data/03-Pandas/tips.csv')
 print(f'Читаем .csv файл из исходных данных через pd.read_csv -> \n{df}')
 
+# атрибут columns выдает список названий колонок. Возвращает объект Index
+print(f"\nатрибут columns: df.columns -> {df.columns}\n")
+
+# атрибут index выдает список индексов (от 0 до 244). Возвращает объект Index
+print(f"\nатрибут index: df.index -> {df.index}\n")
+
+# вывод первых строк DataFrame
+print(f"Метод .head() выводит первые строки: -> {df.head()}")
+
+# вывод последних строк DataFrame через метод .tail()
+print(f"Bывод последних строк DataFrame через метод .tail() -> {df.tail(10)}")
+
+# Вывод полной информации о DataFrame
+print(f"Вывод полной информации о DataFrame: {df.info}")
+
+# подсчет всех данных в цифровых колонках
+print(f"подсчет всех данных в цифровых колонках: df.describe() -> \n{df.describe()}")
+
+# транспонирование
+print(f"Транспонирование - менять местами колонки и строки: \n{df.describe().transpose()}")
+
+## Columns
+# "Вывод колонки
+print(f"Вывод колонки: df['total_bill'] -> {df['total_bill']}")
+
+# "Вывод колонок. указываем список колонок
+mycols = ['total_bill', 'tip']
+print(f"\nВывод колонок. указываем список колонок -> \n{df[['total_bill', 'tip']]}")
+print(f"\nВывод колонок. cоздаем новый список колонок mycols -> \n{df[mycols]}")
+
+# создать данные для новой колонки в DataFrame
+print(f"новая колонка сумма двух колонок: \n{df['tip'] + df['total_bill']}")
+df['tip'] + df['total_bill']
+
+# создать данные для новой колонки в DataFrame
+print(f"Процент чаевых от суммы счета: \n{100 * df['tip'] / df['total_bill']}")
+tip_percentage = 100 * df['tip'] / df['total_bill']
+
+# добавить созданные данные в новую колонку DataFrame
+df['tip_percentage'] = 100 * df['tip'] / df['total_bill']  # or ->  df['tip_percentage'] = tip_percentage
+print(f"добавить созданные данные в новую колонку DataFram: просто ссылваемся на нее будто она уже есть -> \n{df['tip_percentage']}")
+print(f"DataFram: \n{df}")
 
 
 
