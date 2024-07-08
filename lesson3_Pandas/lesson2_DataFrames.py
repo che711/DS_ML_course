@@ -72,6 +72,7 @@ df['tip_percentage'] = 100 * df['tip'] / df['total_bill']  # or ->  df['tip_perc
 print(f"добавить созданные данные в новую колонку DataFram: просто ссылваемся на нее будто она уже есть -> \n{df['tip_percentage']}")
 print(f"DataFram: \n{df}")
 
+#
 
 
 
