@@ -5,7 +5,7 @@ import sys
 
 np.random.seed(101)
 mydata = np.random.randint(0, 101, (4,3))
-print(f"{mydata}")
+print(f"Постоянное рандомные числа: {mydata}")
 
 myindex = ['CA','NY','AZ','TX']
 mycolumns= ['Jen','Feb','Mar']
@@ -76,9 +76,6 @@ print(f"DataFram: \n{df}")
 df['price_per_person'] =  np.round(df['total_bill'] / df['size'], 2)
 print(f"добавить созданные данные в новую колонку DataFram: просто ссылваемся на нее будто она уже есть -> \n{df['tip_percentage']}")
 print(f"DataFram: \n{df}")
-
-
-
 
 
 
