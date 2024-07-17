@@ -18,6 +18,19 @@ print(df[df['sex'] != 'Female'])
 sunday = [df['day'] == 'Sun']
 print(f"выбираем воскресенье: \n{sunday}")
 
+# AND -> &
+# OR -> |
+print(f"condition AND: \n{1 == 1 and 2 != 3}")
+
+# если надо два и более условия использовать  & and |
+print(f"выборка по двум обязательным условиям total_bill и sex через &: -> \n{df[(df['total_bill'] > 30) & (df['sex'] == 'Male')]}")
+print(f"выборка по трем необязательным условиям day через | : -> \n{df[(df['day'] == 'Sun') | (df['day'] == 'Sat') | (df['day'] == 'Fri')]}")
+
+# предыдущая строка только проще через метод .isin()
+options = ['Sat','Sun']
+print(f"проверка наличия слова в словаре: \n{'Sat' in options}")
+print(f"использование isin(): \n{df['day'].isin(options)}")
+
 
 
 
