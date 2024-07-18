@@ -34,6 +34,35 @@ def yelp(price: int) -> int:
 df['yelp'] = df['total_bill'].apply(yelp)
 print(f"выводим новую колонку df['yelp'] -> \n{df['yelp']}")
 
+# def simple(num:int)->int: return num*2 это тоже самое что и -> lambda num: num*2
+lambda bill: bill*2
+
+# example
+def simple(num:int)->int: return num*2
+print(simple(3))
+
+# df['total_bill'].apply(simple) == df['total_bill'].apply(lambda num: num*2)
+simple_and_lambda = df['total_bill'].apply(lambda num: num*2)
+print(simple_and_lambda)
+
+# Mетод .apply() с несколькими колонками
+# проще называеть аргументы функции так же как и колонки dataframe
+def quality(total_bill:float, tip:float) -> float:
+    if tip/total_bill > 0.25: return 'Great tips'
+    else: return 'Normal tips'
+print(f"{quality(16.99, 1.01)}")
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
