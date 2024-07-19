@@ -29,7 +29,7 @@ print(f"выборка по трем необязательным условия
 # предыдущая строка только проще через метод .isin()
 options = ['Sat','Sun']
 print(f"проверка наличия слова в словаре: \n{'Sat' in options}")
-print(f"использование isin(): \n{df['day'].isin(options)}")
+print(f"использование .isin(): \n{df['day'].isin(options)}")
 
 
 
