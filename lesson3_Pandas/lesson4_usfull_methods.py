@@ -1,4 +1,4 @@
-import numpy as nm
+import numpy as np
 import pandas as pd
 
 
@@ -52,7 +52,15 @@ def quality(total_bill:float, tip:float) -> float:
     else: return 'Normal tips'
 print(f"{quality(16.99, 1.01)}")
 
+# создаем новую колонку с объектом Series с результотм применения функции к двум колонкам
+df['quality'] = df[['total_bill','tip']].apply(lambda df: quality(df['total_bill'], df['tip']), axis=1)
 
+print(f"Check both columns: \n{df['quality']}")
+print(f"Full dataFrame: \n{df}")
+
+# тоже самое что и .apply(), только быстрее, .vectoryze() нужен для того что преобразовать ф-ции, которые не предназначены для работы с numpy
+df['quality'] = np.vectorize(quality)(df['total_bill'], df['tip'])
+print(f"{df.head()}")
 
 
 
