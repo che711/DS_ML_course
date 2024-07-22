@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-
+import timeit
 
 df = pd.read_csv('../course_data/03-Pandas/tips.csv')
 # print(f"просто выводим массив: \n{df}")
@@ -61,6 +61,52 @@ print(f"Full dataFrame: \n{df}")
 # тоже самое что и .apply(), только быстрее, .vectoryze() нужен для того что преобразовать ф-ции, которые не предназначены для работы с numpy
 df['quality'] = np.vectorize(quality)(df['total_bill'], df['tip'])
 print(f"{df.head()}")
+
+#  этот фрагмент кода будет запускаться только один раз
+setup = '''
+import numpy as np
+import pandas as pd
+df = pd.read_csv('../course_data/03-Pandas/tips.csv')
+def quality(total_bill,tip):
+    if tip/total_bill  > 0.25:
+        return "Generous"
+    else:
+        return "Other"
+'''
+# это фрагменты кода, для которых будет измеряться время выполнения
+# (они будут выполняться много раз)
+stmt_one = ''' 
+df['Tip Quality'] = df[['total_bill','tip']].apply(lambda df: quality(df['total_bill'],df['tip']),axis=1)
+'''
+
+stmt_two = '''
+df['Tip Quality'] = np.vectorize(quality)(df['total_bill'], df['tip'])
+'''
+
+stmt_one = timeit.timeit(setup = setup, stmt = stmt_one, number = 1000)
+stmt_two = timeit.timeit(setup = setup, stmt = stmt_two, number = 1000)
+print(f"Время выполнения .apply() -> {stmt_one}")
+print(f"Время выполнения.vectorize() -> {stmt_two}")
+print(f"Во сколько раз .vectorize() быстрее чем .apply() -> {stmt_one/stmt_two}")
+
+# выводит основные характеристики числовых колонок
+print(f"\nСреднее значение цифровых колонок dataFrame{df.describe()}")
+
+# меняет местами колонки и строки
+print(f"меняет местами колонки и строки df.describe().transpose() -> \n{df.describe().transpose()}")
+
+# сортировка dataFrame. параметр ascending=False - в обратном порядке
+print(f"{df.sort_values(['tip', 'size'], ascending=False)}")
+
+# вывести индекс с максимальным значением в колонке
+print(f" вывести индекс с максимальным значением в колонке -> \n{df['total_bill'].idxmax()}")
+
+# данные о строке
+print(f"данные о строке 170 -> \n{df.iloc[170]}")
+
+# Корреляция - это статистическая мера, которая показывает, насколько сильно две переменные связаны между собой. Если объяснять простыми словами, то корреляция говорит нам, как одна вещь меняется по отношению к другой.
+print(f"Корреляция -> \n{df.corr(numeric_only=True)}")
+
 
 
 
