@@ -152,7 +152,6 @@ print(f"фильтруем по условию выше -> \n{df[df['total_bill'
 print(f"выводим десять строк с наибольшими значениями в колонке 'tip'. Фактически сортируем данные -> \n{df.nlargest(10, 'tip')}")
 
 # тоже что и код выше
-df.sort_values('tip', ascending=False).iloc[0:5]
 print(f"тоже что и код выше -> \n{df.sort_values('tip', ascending=False).iloc[0:5]}")
 
 # выводим десять строк с наименьшими значениями в колонке 'tip'. Метод обратный .nlargest()
