@@ -156,6 +156,7 @@ cython_debug/
 
 # IDE folders and files
 .idea
+.run
 
 
 # PyCharm
