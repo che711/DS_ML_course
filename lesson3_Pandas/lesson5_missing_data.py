@@ -24,4 +24,8 @@ print(f" -> \n{df}")
 print(f"проверяем содержит ли dataframe отсутствующие данные -> \n{df.isnull()}")
 
 
+
+
+
+
 # print(f" -> \n{}")
