@@ -57,4 +57,15 @@ df["pre_movie_score"].mean() # находим среднее значение
 df['pre_movie_score'].fillna(df['pre_movie_score'].mean())  # передаем среднее значение вместо NaN (без сохранения)
 print(f"\ndf['pre_movie_score'].fillna(df['pre_movie_score'].mean()) -> \n{df['pre_movie_score'].fillna(df['pre_movie_score'].mean())}")
 
-# print(f"\n -> \n{}")
+# Замена NaN на интерполированные значения
+# новый словарь
+airline_tix = {'first': 100, "business": np.nan, 'economy_plus': 50, 'economy': 30}
+
+# создаем новый объект Series
+ser = pd.Series(airline_tix)
+print(f"\n -> \n{ser}")
+# линейная интерполяция. Данные должны быть упорядочены
+ser.interpolate()
+print(f"\nser.interpolate() -> \n{ser.interpolate()}")
+
+
