@@ -65,7 +65,6 @@ airline_tix = {'first': 100, "business": np.nan, 'economy_plus': 50, 'economy': 
 ser = pd.Series(airline_tix)
 print(f"\n -> \n{ser}")
 # линейная интерполяция. Данные должны быть упорядочены
-ser.interpolate()
 print(f"\nser.interpolate() -> \n{ser.interpolate()}")
 
 
