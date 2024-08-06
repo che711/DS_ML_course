@@ -72,17 +72,3 @@ print(f"\n -> \n{df.agg({'mpg':["max", "mean"], 'weight': ['mean', 'std']})}")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
