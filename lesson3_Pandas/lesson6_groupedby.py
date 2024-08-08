@@ -68,7 +68,3 @@ print(f"\n -> \n{df.agg({'mpg':["max", "mean"], 'weight': ['mean', 'std']})}")
 
 # разобраться почему не работает
 # print(f"\n -> \n{df.agg(['std', 'mean']).mean()['mpg']}")
-
-
-
-
