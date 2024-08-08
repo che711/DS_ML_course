@@ -10,6 +10,17 @@ two = pd.DataFrame(data_two)
 print(f'\n -> \n{one}')
 print(f'\n -> \n{one}')
 
+# переименование колонок для валидного объединения строк
+two.columns = one.columns
+print(f'\n -> \n{two}')
+
+print(f'\npd.concat([one, two], axis=0) -> \n{pd.concat([one, two], axis=0)}')
+
+# сохраняем предыдущий dataFrame в переменную и изменяем ему индекс
+mydf = pd.concat([one,two], axis=0)
+mydf.index = range(len(mydf))
+print(f'\nmydf -> \n{mydf}')
+
 
 # print(f'\n -> \n{}')
 
