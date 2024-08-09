@@ -21,6 +21,15 @@ mydf = pd.concat([one,two], axis=0)
 mydf.index = range(len(mydf))
 print(f'\nmydf -> \n{mydf}')
 
+# создаем два dataFrames
+registrations = pd.DataFrame({'reg_id':[1,2,3,4],'name':['Andrew','Bobo','Claire','David']})
+logins = pd.DataFrame({'log_id':[1,2,3,4],'name':['Xavier','Andrew','Yolanda','Bobo']})
+
+print(f"\nregistrations -> \n{registrations}")
+print(f"\nlogins -> \n{logins}")
+print(f"\npd.merge(registrations, logins, how='inner', on='name') -> \n{pd.merge(registrations, logins, how='inner', 
+                                                                                 on='name')}")
+
 
 # print(f'\n -> \n{}')
 
