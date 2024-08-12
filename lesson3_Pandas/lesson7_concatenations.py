@@ -22,8 +22,8 @@ mydf.index = range(len(mydf))
 print(f'\nmydf -> \n{mydf}')
 
 # создаем два dataFrames
-registrations = pd.DataFrame({'reg_id':[1,2,3,4],'name':['Andrew','Bobo','Claire','David']})
-logins = pd.DataFrame({'log_id':[1,2,3,4],'name':['Xavier','Andrew','Yolanda','Bobo']})
+registrations = pd.DataFrame({'reg_id': [1, 2, 3, 4], 'name': ['Andrew', 'Bobo', 'Claire', 'David']})
+logins = pd.DataFrame({'log_id': [1, 2, 3, 4], 'name': ['Xavier', 'Andrew', 'Yolanda', 'Bobo']})
 
 print(f"\nregistrations -> \n{registrations}")
 print(f"\nlogins -> \n{logins}")
