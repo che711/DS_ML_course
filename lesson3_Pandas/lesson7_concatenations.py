@@ -32,17 +32,6 @@ print(f"\npd.merge(registrations, logins, how='inner', on='name') -> \n{pd.merge
 
 
 # print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
-# print(f'\n -> \n{}')
+#
+
 
