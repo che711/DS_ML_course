@@ -29,9 +29,3 @@ print(f"\nregistrations -> \n{registrations}")
 print(f"\nlogins -> \n{logins}")
 print(f"\npd.merge(registrations, logins, how='inner', on='name') -> \n{pd.merge(registrations, logins, how='inner', 
                                                                                  on='name')}")
-
-
-# print(f'\n -> \n{}')
-#
-
-
