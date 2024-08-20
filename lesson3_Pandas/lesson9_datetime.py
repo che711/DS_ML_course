@@ -68,7 +68,3 @@ sales = pd.read_csv('../course_data/03-Pandas/RetailSales_BeerWineLiquor.csv', p
 
 # print(f'\n -> \n{}')
 
-
-
-
-
