@@ -16,7 +16,7 @@ print(f"\n -> \n{len(tech_finance)}")
 
 tech = 'GOOG,APPL,AMZN'
 print(f"\n -> \n{tech.split(',')[0]}")
-
+ 
 tickers = pd.Series(tech_finance)
 print(f"\n -> \n{tickers.str.split(',', expand=True)}")
 print(f"\n -> \n{tickers.str.split(',')}")
@@ -34,6 +34,3 @@ def cleanup(name):
 
 
 print(f"\nприменяем ф-цию ко всему объекту pd.Series: -> \n{messy_names.apply(cleanup)}")
-
-
-
