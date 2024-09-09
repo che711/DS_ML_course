@@ -61,9 +61,3 @@ print(f'\n -> \n{sales.resample(rule='YE').mean()}')
 
 sales = pd.read_csv('../course_data/03-Pandas/RetailSales_BeerWineLiquor.csv', parse_dates = [0])
 
-
-# print(f'\n -> \n{}')
-
-
-
-# print(f'\n -> \n{}')
