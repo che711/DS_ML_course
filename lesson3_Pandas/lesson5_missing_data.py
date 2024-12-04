@@ -70,3 +70,6 @@ print(f"\nser.interpolate() -> \n{ser.interpolate()}")
 
 
 
+
+
+
