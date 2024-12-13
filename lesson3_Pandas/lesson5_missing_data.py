@@ -68,8 +68,3 @@ print(f"\n -> \n{ser}")
 print(f"\nser.interpolate() -> \n{ser.interpolate()}")
 
 
-
-
-
-
-
