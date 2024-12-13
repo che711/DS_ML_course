@@ -126,7 +126,3 @@ def caught_speeding(speed, is_birthday=False):
 
 print(f"{caught_speeding(80, True)}")
 
-
-
-
-

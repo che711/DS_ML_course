@@ -127,4 +127,3 @@ print(f'создание новой строки: \n{one_row}')
 pd.concat([df, pd.DataFrame([one_row])], axis=0)
 print(df)
 
-
