@@ -1,4 +1,4 @@
-print('my name is {myname} and my phone number {phone_number}'.format(myname="Tonny", phone_number=3333333))
+lprint('my name is {myname} and my phone number {phone_number}'.format(myname="Tonny", phone_number=3333333))
 
 my_list=['жизнь', 'cloud', 8, 'string', 234]
 data_1=my_list[-2]
@@ -37,4 +37,6 @@ list = [2, 5, "data", "TEST"]
 print(f"list: {list}")
 list[2] = 'new_position'
 print(f"new list: {list}")
+
+
 
