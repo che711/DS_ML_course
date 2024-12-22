@@ -23,9 +23,11 @@ print(f'new_list: {new_list[2]}')
 
 dict = {'key2':'value1', 'key2':'value2'}
 
+
 True
 
 False
+
 
 # неизменяемые типы данных
 set = {'test', 9, 'oops', 3432}
