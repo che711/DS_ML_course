@@ -76,3 +76,4 @@ arr[bool_arr]
 
 # тоже что и выше
 new_arr[arr > 4]
+
