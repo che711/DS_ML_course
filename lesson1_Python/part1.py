@@ -40,3 +40,4 @@ print(f"list: {list}")
 list[2] = 'new_position'
 print(f"new list: {list}")
 
+
