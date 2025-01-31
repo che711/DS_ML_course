@@ -33,5 +33,3 @@ def cleanup(name):
     return name
 
 print(f"\nприменяем ф-цию ко всему объекту pd.Series: -> \n{messy_names.apply(cleanup)}")
-
-
