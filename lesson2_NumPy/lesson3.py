@@ -25,4 +25,3 @@ print(f"Cоздаем двумерный массив arr2d: {arr2d}")
 print(f"Cумма элементов двумерного массива: {arr2d.sum()}")
 print(f"Cумма элементов колонок -> axis=0: {arr2d.sum(axis=0)}")
 print(f"Cумма элементов строк -> axis=1: {arr2d.sum(axis=1)}")
-
