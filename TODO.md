@@ -37,3 +37,5 @@
 - **Год 2**: Hugging Face, PyTorch, MLOps (Docker/K8s, MLflow), участие в open-source.  
 - **Год 3**: LLMs (LoRA/QLoRA, LangChain), запуск MVP SaaS продукта.  
 - **Год 4**: Продвижение личного бренда, выступления, стартап / переход в senior/lead AI role.
+
+
